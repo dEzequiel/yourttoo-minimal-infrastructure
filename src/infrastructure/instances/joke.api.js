@@ -11,7 +11,7 @@ export const jokeApi = {
      */
     get: async (path, params, config) => {
         try {
-            const response = await fetch('https://official-joke-api.appspot.com/random_joke');
+            const response = await fetch(process.env.JOKE_API_URL);
             const data = await response.json();
             return new ApiResponse(data);
         } catch (error) {
