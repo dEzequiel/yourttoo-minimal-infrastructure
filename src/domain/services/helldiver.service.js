@@ -7,7 +7,7 @@ import "../../infrastructure/repositories/helldiver.repository.js";
  */
 
 /**
- * @param {HelldiverRepository} helldiverRepository
+ * @param {import("../../infrastructure/repositories/helldiver.repository").HelldiverRepository} helldiverRepository
  * @returns {HelldiverService}
  */
 const HelldiversService = function (helldiverRepository) {
@@ -16,7 +16,8 @@ const HelldiversService = function (helldiverRepository) {
          * @returns {Promise<HelldiverDTO[]>}
          */
         getHelldivers: async () => {
-            return helldiverRepository.getHelldivers();
+            var result = helldiverRepository.getHelldivers();
+            return result;
         },
         
         /**
