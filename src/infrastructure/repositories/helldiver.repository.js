@@ -1,4 +1,4 @@
-import HelldiverDTO from "../http/dto/HelldiverDTO.js";
+import HelldiverDTO from "../http/dto/helldiver.dto.js";
 import '../../domain/repositories/http.js';
 
 /**
